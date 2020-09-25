@@ -11,6 +11,30 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'cocteles',
+    loadChildren: () => import('./cocteles/cocteles.module').then( m => m.CoctelesPageModule)
+  },
+  {
+    path: 'cervezas',
+    loadChildren: () => import('./cervezas/cervezas.module').then( m => m.CervezasPageModule)
+  },
+  {
+    path: 'vinos',
+    loadChildren: () => import('./vinos/vinos.module').then( m => m.VinosPageModule)
+  },
+  {
+    path: 'chupitos',
+    loadChildren: () => import('./chupitos/chupitos.module').then( m => m.ChupitosPageModule)
+  },
+  {
+    path: 'mocktails',
+    loadChildren: () => import('./mocktails/mocktails.module').then( m => m.MocktailsPageModule)
+  },
+  {
+    path: 'gazeosas',
+    loadChildren: () => import('./gazeosas/gazeosas.module').then( m => m.GazeosasPageModule)
+  },
 ];
 
 @NgModule({

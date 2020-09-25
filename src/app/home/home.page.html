@@ -1,20 +1,113 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div style="border-style: dashed; margin: 15px; height: 100vh;">
+    <div>
+      <ion-img style="height: 30vh;" src="../assets/img/mosquitologoalfa.png"></ion-img>
+    </div>
+    <div>
+      <ion-img src="../assets/img/maya.png"></ion-img>
+    </div>
+    <div>
+      <ion-slides>
+        <ion-slide (click)="cocteleslog()">
+          <h1>Cocteles</h1>
+        </ion-slide>
+        <ion-slide (click)="cervezaslog()">
+          <h1>Cervezas</h1>
+        </ion-slide>
+        <ion-slide (click)="vinoslog()">
+          <h1>Vinos</h1>
+        </ion-slide>
+        <ion-slide (click)="chupitoslog()">
+          <h1>Chupitos</h1>
+        </ion-slide>
+        <ion-slide (click)="mocktailslog()">
+          <h1>Mocktails</h1>
+        </ion-slide>
+        <ion-slide (click)="gazeosaslog()">
+          <h1>Gazeosas</h1>
+        </ion-slide>
+      </ion-slides>
+    </div>
+    <div>
+      <ion-img src="../assets/img/disenoabajo.png"></ion-img>
+    </div>
   </div>
+  
+  <!-- <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-lg >
+        <ion-item lines="none">
+          <ion-avatar>
+            <ion-img src="../assets/img/obasamba.jpg"></ion-img>
+          </ion-avatar>
+          <ion-label (click)="cocteleslog()">
+            <div>
+              <p style="text-align: center;">Cocteles</p>
+            </div>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" size-lg>
+        <ion-item lines="none" >
+          <ion-avatar>
+            <ion-img src="../assets/img/pacifico.jpg"></ion-img>
+          </ion-avatar>
+          <ion-label (click)="cervezaslog()">
+            <div>
+              <p style="text-align: center;">Cervezas</p>
+            </div>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" size-lg>
+        <ion-item lines="none" >
+          <ion-avatar>
+            <ion-img src="../assets/img/wine.jpeg"></ion-img>
+          </ion-avatar>
+          <ion-label (click)="vinoslog()">
+            <div>
+              <p style="text-align: center;">Vinos</p>
+            </div>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" size-lg >
+        <ion-item lines="none">
+          <ion-avatar>
+            <ion-img src="../assets/img/chupitos.jpg"></ion-img>
+          </ion-avatar>
+          <ion-label (click)="chupitoslog()">
+            <div>
+              <p style="text-align: center;">Chupitos</p>
+            </div>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" size-lg>
+        <ion-item lines="none">
+          <ion-avatar>
+            <ion-img src="../assets/img/mocktails.jpeg"></ion-img>
+          </ion-avatar>
+          <ion-label (click)="mocktailslog()">
+            <div>
+              <p style="text-align: center;">Mocktails</p>
+            </div>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" size-lg >
+        <ion-item lines="none">
+          <ion-avatar>
+            <ion-img src="../assets/img/jarritos.jpg"></ion-img>
+          </ion-avatar>
+          <ion-label (click)="gazeosaslog()">
+            <div>
+              <p style="text-align: center;">Gazeosas</p>
+            </div>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
 </ion-content>
